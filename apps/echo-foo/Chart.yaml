@@ -1,0 +1,7 @@
+apiVersion: v1
+name: http-echo
+version: 0.0.0
+dependencies:
+  - name: http-echo
+    version: 0.3.1
+    repository: https://haraldkoch.github.io/helm-charts

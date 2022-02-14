@@ -1,0 +1,28 @@
+gitea:
+  ingress:
+    enabled: true
+    className: nginx
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: &host git.hyphenlab.com
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+      - secretName: gitea-tls-certificate
+        hosts:
+          - *host
+  gitea:
+    admin:
+      # existingSecret: gitea-admin-secret
+      password: asdfasdfasdf  # TODO yes I know this is just for testing
+    config:
+      server:
+        LANDING_PAGE: explore
+        ROOT_URL: https://git.hyphenlab.com
+  persistence:
+    storageClass: longhorn
+  postgresql:
+    persistence:
+      storageClass: longhorn
