@@ -55,11 +55,6 @@
     <td>Log aggregation system</td>
   </tr>
   <tr>
-    <td><img width="32" src="https://cncf-branding.netlify.app/img/projects/longhorn/icon/color/longhorn-icon-color.svg"></td>
-    <td><a href="https://longhorn.io">Longhorn</a></td>
-    <td>Cloud native distributed block storage for Kubernetes</td>
-  </tr>
-  <tr>
     <td><img width="32" src="https://avatars.githubusercontent.com/u/60239468?s=200&v=4"></td>
     <td><a href="https://metallb.org">MetalLB</a></td>
     <td>Bare metal load-balancer for Kubernetes</td>
