@@ -134,6 +134,8 @@ cd script
 ```
 Config DNS
 ```
+cd script
+./get-dns-config
 - Use nip.io (suitable for a test environment) Or
 - Change the DNS config in your router
 https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/
@@ -144,4 +146,13 @@ cd metal
 vagrant destroy
 or
 rm -rf ~/VirtualBox\ VMs/* (for Mac)
+```
+
+Some kubectl commands
+```
+export KUBECONFIG=./metal/kubeconfig.yaml
+kubectl get ingress --all-namespaces
+kubectl describe ingress --all-namespaces
+kubectl get ep --all-namespaces
+kubectl get svc --all-namespaces
 ```
