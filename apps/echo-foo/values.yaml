@@ -49,8 +49,8 @@ http-echo:
         cert-manager.io/cluster-issuer: letsencrypt-prod
         nginx.ingress.kubernetes.io/rewrite-target: /
       hosts:
+        - host: foo.hyphenlab.com
           paths:
-            - host: foo.hyphenlab.com
             - path: /foo
               pathType: Exact
               service:
