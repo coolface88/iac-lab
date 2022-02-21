@@ -156,3 +156,6 @@ kubectl describe ingress --all-namespaces
 kubectl get ep --all-namespaces
 kubectl get svc --all-namespaces
 ```
+
+### Ref
+Credit goes to https://github.com/khuedoan/homelab
